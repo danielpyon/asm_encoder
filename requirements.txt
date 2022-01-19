@@ -1,4 +1,3 @@
-PeachPy==0.2.0
 pkg-resources==0.0.0
 six==1.16.0
 unicorn==1.0.3
