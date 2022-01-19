@@ -15,4 +15,4 @@ try:
     print(mu.reg_read(UC_X86_REG_RDI))
 
 except UcError as e:
-    print('Error: %s' % e)
+    print(f'Error: {e}')
