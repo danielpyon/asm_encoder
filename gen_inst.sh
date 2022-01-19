@@ -1,7 +1,8 @@
 # $1: name of assembly file
-# $2: name of binary
 
-gcc -o $2 -nostdlib -static $1
-objcopy -O binary -j .text $2 out
-od -An -t x1 out
+gcc -nostdlib -static $1
+objcopy -O binary -j .text a.out out
+od -An -t x1 out | python3 raw.py
 
+rm out
+rm a.out
